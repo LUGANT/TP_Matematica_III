@@ -5,6 +5,8 @@ FUNCIONES
 """
 Contar los elementos de un DataFrame si es que son valores repetitivos 
 """
+import numpy as np
+import pandas as pd
 
 def countValuesInSerie(serie, dataInSerie):
     """
@@ -19,4 +21,3 @@ def countValuesInSerie(serie, dataInSerie):
         * la cantidad de iteraciones de un dato 
     """
     return serie[serie == dataInSerie].size
-    
