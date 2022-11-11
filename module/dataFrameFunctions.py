@@ -21,3 +21,17 @@ def countValuesInSerie(serie, dataInSerie):
         * la cantidad de iteraciones de un dato 
     """
     return serie[serie == dataInSerie].size
+
+def serieFromColumn(df,column):
+    """
+    # Description 
+        * devuelve una seríe de elementos de un dataFrame, tomando su columna
+
+    # Parameters
+        * df : dataFrame Object - Toma un dataFrame por parametro
+        * column : string - La columna del dataFrame
+
+    # Returns
+        * Serie de pandas
+    """
+    return df[column].value_counts()
